@@ -17,6 +17,7 @@
 		74AA820D1E7BBB1000E9AE51 /* LaunchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA82091E7BBB1000E9AE51 /* LaunchVC.swift */; };
 		74AA82101E7BBB2800E9AE51 /* QKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA820F1E7BBB2800E9AE51 /* QKViewController.swift */; };
 		74AA82121E7BBC1600E9AE51 /* QKTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */; };
+		74AF2B1A1E7FE14A005D1878 /* SwiftCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AF2B191E7FE14A005D1878 /* SwiftCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		74AA82091E7BBB1000E9AE51 /* LaunchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchVC.swift; sourceTree = "<group>"; };
 		74AA820F1E7BBB2800E9AE51 /* QKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKViewController.swift; sourceTree = "<group>"; };
 		74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKTabbarController.swift; sourceTree = "<group>"; };
+		74AF2B191E7FE14A005D1878 /* SwiftCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCore.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCore.framework"; sourceTree = "<group>"; };
+		74AF2B211E7FE322005D1878 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = ../BridgingHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74AF2B1A1E7FE14A005D1878 /* SwiftCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +106,7 @@
 		74AA81C41E7BB88400E9AE51 /* swift3-example */ = {
 			isa = PBXGroup;
 			children = (
+				74AF2B181E7FE129005D1878 /* Third Party */,
 				74AA81F31E7BB9D100E9AE51 /* Assets */,
 				74AA81F61E7BB9D100E9AE51 /* Classes */,
 				74AA81F71E7BB9D100E9AE51 /* Storyboards */,
@@ -155,6 +160,7 @@
 		74AA81F61E7BB9D100E9AE51 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				74AF2B1C1E7FE1EC005D1878 /* MISC */,
 				74AA82061E7BBB1000E9AE51 /* UI */,
 			);
 			path = Classes;
@@ -172,6 +178,7 @@
 		74AA81F81E7BB9D100E9AE51 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74AF2B211E7FE322005D1878 /* BridgingHeader.h */,
 				74AA81F91E7BB9D100E9AE51 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -218,6 +225,21 @@
 				74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */,
 			);
 			path = Share;
+			sourceTree = "<group>";
+		};
+		74AF2B181E7FE129005D1878 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				74AF2B191E7FE14A005D1878 /* SwiftCore.framework */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		74AF2B1C1E7FE1EC005D1878 /* MISC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MISC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.quanky.swift3-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift3-example/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -510,6 +533,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.quanky.swift3-example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift3-example/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -587,6 +611,7 @@
 				74AA81EC1E7BB88400E9AE51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74AA81ED1E7BB88400E9AE51 /* Build configuration list for PBXNativeTarget "swift3-exampleTests" */ = {
 			isa = XCConfigurationList;
@@ -595,6 +620,7 @@
 				74AA81EF1E7BB88400E9AE51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74AA81F01E7BB88400E9AE51 /* Build configuration list for PBXNativeTarget "swift3-exampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -603,6 +629,7 @@
 				74AA81F21E7BB88400E9AE51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
