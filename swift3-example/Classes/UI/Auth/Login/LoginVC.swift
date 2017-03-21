@@ -1,33 +1,19 @@
 //
-//  LaunchVC.swift
+//  LoginVC.swift
 //  swift3-example
 //
-//  Created by Quang Co on 3/17/17.
+//  Created by Quang Co on 3/21/17.
 //  Copyright © 2017 quanky. All rights reserved.
 //
 
 import UIKit
 
-class LaunchVC: QKViewController {
-    
+class LoginVC: QKViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.view.backgroundColor = UIColor.brown
-        
-        
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        if AccountManager.userManager.isLoggedIn {
-            //User logged in before, should show main view
-            appDelegate?.showMainView()
-        } else {
-            //Show login or sign up view
-            appDelegate?.showLoginView()
-        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,4 +32,15 @@ class LaunchVC: QKViewController {
     }
     */
 
+    //MARK: - Actions
+    @IBAction func btnLoginClicked() {
+        let sample = AccountModel()
+        sample.id = "123"
+        sample.email = "qu4ngco@gmail.com"
+        sample.token = "$2y$10$JebsikhcX8j6wwX3agk12O1usfz6y7avRnwZ9qF31vLoN1Ob6HCcK"
+        appDelegate?.loginWithAccount(sample)
+    }
+    
+    //MARK: - Misc
+    
 }

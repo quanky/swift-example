@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742AF4481E8106D700BAD5AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF4471E8106D700BAD5AA /* HomeVC.swift */; };
+		742AF44A1E8106DE00BAD5AA /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF4491E8106DE00BAD5AA /* SettingVC.swift */; };
 		74AA81CD1E7BB88400E9AE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AA81CC1E7BB88400E9AE51 /* Assets.xcassets */; };
 		74AA81DB1E7BB88400E9AE51 /* swift3_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA81DA1E7BB88400E9AE51 /* swift3_exampleTests.swift */; };
 		74AA81E61E7BB88400E9AE51 /* swift3_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA81E51E7BB88400E9AE51 /* swift3_exampleUITests.swift */; };
@@ -18,6 +20,12 @@
 		74AA82101E7BBB2800E9AE51 /* QKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA820F1E7BBB2800E9AE51 /* QKViewController.swift */; };
 		74AA82121E7BBC1600E9AE51 /* QKTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */; };
 		74AF2B1A1E7FE14A005D1878 /* SwiftCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AF2B191E7FE14A005D1878 /* SwiftCore.framework */; };
+		74EB387E1E80DED7005BF2A7 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB387D1E80DED7005BF2A7 /* AccountManager.swift */; };
+		74EB38811E80DF92005BF2A7 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB38801E80DF92005BF2A7 /* AccountModel.swift */; };
+		74EB38841E80DFA9005BF2A7 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB38831E80DFA9005BF2A7 /* BaseModel.swift */; };
+		74EB38881E80E47B005BF2A7 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB38871E80E47B005BF2A7 /* AppConstants.swift */; };
+		74EB388A1E80E539005BF2A7 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74EB38891E80E539005BF2A7 /* Login.storyboard */; };
+		74EB38921E80E75C005BF2A7 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EB38911E80E75C005BF2A7 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		742AF4471E8106D700BAD5AA /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		742AF4491E8106DE00BAD5AA /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
 		74AA81C21E7BB88400E9AE51 /* swift3-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift3-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AA81CC1E7BB88400E9AE51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AA81D61E7BB88400E9AE51 /* swift3-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift3-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +65,12 @@
 		74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKTabbarController.swift; sourceTree = "<group>"; };
 		74AF2B191E7FE14A005D1878 /* SwiftCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftCore.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SwiftCore.framework"; sourceTree = "<group>"; };
 		74AF2B211E7FE322005D1878 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BridgingHeader.h; path = ../BridgingHeader.h; sourceTree = "<group>"; };
+		74EB387D1E80DED7005BF2A7 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		74EB38801E80DF92005BF2A7 /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		74EB38831E80DFA9005BF2A7 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		74EB38871E80E47B005BF2A7 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		74EB38891E80E539005BF2A7 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		74EB38911E80E75C005BF2A7 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742AF4451E8106CE00BAD5AA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				742AF4471E8106D700BAD5AA /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		742AF4461E8106CE00BAD5AA /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				742AF4491E8106DE00BAD5AA /* SettingVC.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		74AA81B91E7BB88300E9AE51 = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +192,10 @@
 		74AA81F61E7BB9D100E9AE51 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				74AF2B1C1E7FE1EC005D1878 /* MISC */,
+				74EB38761E80DE41005BF2A7 /* Common */,
+				74EB38781E80DE41005BF2A7 /* Models */,
+				74EB38791E80DE41005BF2A7 /* Services */,
+				74EB387A1E80DE56005BF2A7 /* Managers */,
 				74AA82061E7BBB1000E9AE51 /* UI */,
 			);
 			path = Classes;
@@ -171,6 +206,7 @@
 			children = (
 				74AA81FB1E7BBA1A00E9AE51 /* LaunchScreen.storyboard */,
 				74AA81FC1E7BBA1A00E9AE51 /* Main.storyboard */,
+				74EB38891E80E539005BF2A7 /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -207,6 +243,8 @@
 		74AA820A1E7BBB1000E9AE51 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				74EB388D1E80E724005BF2A7 /* Login */,
+				74EB388E1E80E724005BF2A7 /* Register */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -214,6 +252,8 @@
 		74AA820B1E7BBB1000E9AE51 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				742AF4451E8106CE00BAD5AA /* Home */,
+				742AF4461E8106CE00BAD5AA /* Setting */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -235,11 +275,83 @@
 			path = "Third Party";
 			sourceTree = "<group>";
 		};
-		74AF2B1C1E7FE1EC005D1878 /* MISC */ = {
+		74EB38761E80DE41005BF2A7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38861E80E46F005BF2A7 /* Constants */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		74EB38781E80DE41005BF2A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38821E80DFA2005BF2A7 /* Base */,
+				74EB387F1E80DF88005BF2A7 /* Account */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74EB38791E80DE41005BF2A7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = MISC;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		74EB387A1E80DE56005BF2A7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				74EB387C1E80DEC2005BF2A7 /* Account */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		74EB387C1E80DEC2005BF2A7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				74EB387D1E80DED7005BF2A7 /* AccountManager.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		74EB387F1E80DF88005BF2A7 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38801E80DF92005BF2A7 /* AccountModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		74EB38821E80DFA2005BF2A7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38831E80DFA9005BF2A7 /* BaseModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		74EB38861E80E46F005BF2A7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38871E80E47B005BF2A7 /* AppConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		74EB388D1E80E724005BF2A7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				74EB38911E80E75C005BF2A7 /* LoginVC.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		74EB388E1E80E724005BF2A7 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,6 +465,7 @@
 				74AA81FD1E7BBA1A00E9AE51 /* LaunchScreen.storyboard in Resources */,
 				74AA81FA1E7BB9D100E9AE51 /* Info.plist in Resources */,
 				74AA81CD1E7BB88400E9AE51 /* Assets.xcassets in Resources */,
+				74EB388A1E80E539005BF2A7 /* Login.storyboard in Resources */,
 				74AA81FE1E7BBA1A00E9AE51 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +491,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EB387E1E80DED7005BF2A7 /* AccountManager.swift in Sources */,
+				742AF4481E8106D700BAD5AA /* HomeVC.swift in Sources */,
+				74EB38811E80DF92005BF2A7 /* AccountModel.swift in Sources */,
+				74EB38841E80DFA9005BF2A7 /* BaseModel.swift in Sources */,
+				74EB38921E80E75C005BF2A7 /* LoginVC.swift in Sources */,
+				74EB38881E80E47B005BF2A7 /* AppConstants.swift in Sources */,
 				74AA820C1E7BBB1000E9AE51 /* AppDelegate.swift in Sources */,
+				742AF44A1E8106DE00BAD5AA /* SettingVC.swift in Sources */,
 				74AA82101E7BBB2800E9AE51 /* QKViewController.swift in Sources */,
 				74AA820D1E7BBB1000E9AE51 /* LaunchVC.swift in Sources */,
 				74AA82121E7BBC1600E9AE51 /* QKTabbarController.swift in Sources */,

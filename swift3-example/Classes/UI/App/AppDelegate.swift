@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -44,7 +45,63 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 //MARK : - Custom Tools
 extension AppDelegate {
+    func loginWithAccount(_ account: AccountModel) {
+        AccountManager.userManager.setCurrentAccount(account)
+        AccountManager.userManager.token = account.token
+        AccountManager.userManager.saveCurrentUser()
+        QKCache.defaultCache.setObject(account.token, forKey: AppConstants.Cache.APIToken)
+        subscribeToPushNotification()
+        DispatchQueue.global().async {
+            //Should refresh user profile or portfolio here
+        }
+        showMainView()
+    }
     
+    func logOut() {
+        unsubscribeToPushNotification()
+    }
+    
+    func showLoginView() {
+        let vc = UIStoryboard(name: AppConstants.InterfaceID.LoginSb, bundle: nil).instantiateViewController(withIdentifier: AppConstants.InterfaceID.LoginVC)
+        transitionToViewController(vc)
+    }
+    
+    func showMainView() {
+        let vc = UIStoryboard(name: AppConstants.InterfaceID.MainSb, bundle: nil).instantiateInitialViewController()
+        transitionToViewController(vc)
+    }
+    
+    func transitionToViewController(_ vc: UIViewController?, animated: Bool = true, options: UIViewAnimationOptions = .transitionFlipFromRight) {
+        let _ = vc?.view
+        
+        if let vc = vc
+        {
+            if !animated {
+                
+                self.window?.rootViewController = vc
+                
+            } else {
+                UIView.transition(with: UIApplication.shared.keyWindow!, duration: 1.0, options: options, animations: { () -> Void in
+                    
+                    self.window?.rootViewController = vc
+                    
+                }, completion: { (Bool) -> Void in
+                    //Should validate token again in here
+                    
+                })
+            }
+        } else {
+            QK.Log("Unabled to go transition to null view controller")
+        }
+    }
+    
+    func subscribeToPushNotification() {
+        
+    }
+    
+    func unsubscribeToPushNotification() {
+        
+    }
 }
 
 
