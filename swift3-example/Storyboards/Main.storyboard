@@ -27,10 +27,10 @@
             </objects>
             <point key="canvasLocation" x="-1391" y="114"/>
         </scene>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="swift3_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -46,10 +46,10 @@
             </objects>
             <point key="canvasLocation" x="362" y="-355"/>
         </scene>
-        <!--View Controller-->
+        <!--SettingVC-->
         <scene sceneID="HSQ-23-hAZ">
             <objects>
-                <viewController id="f3e-cY-WLC" sceneMemberID="viewController">
+                <viewController id="f3e-cY-WLC" customClass="SettingVC" customModule="swift3_example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EHc-m7-z9B"/>
                         <viewControllerLayoutGuide type="bottom" id="icO-lU-Yug"/>
@@ -57,7 +57,17 @@
                     <view key="view" contentMode="scaleToFill" id="eKV-eU-Gjg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7q-P7-zpy">
+                                <rect key="frame" x="164" y="259" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnLogOutClicked" destination="f3e-cY-WLC" eventType="touchUpInside" id="qaJ-Ge-YBj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.078229852020000004" green="0.23013144730000001" blue="0.30928665399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="1s0-K2-04W"/>
                 </viewController>
@@ -68,7 +78,7 @@
         <!--Item-->
         <scene sceneID="Mlz-mN-4ed">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GVV-Af-qKQ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GVV-Af-qKQ" customClass="QKNavigationController" customModule="swift3_example" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="7AD-Ld-WXX"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="DeT-36-7gP">
@@ -87,7 +97,7 @@
         <!--Item-->
         <scene sceneID="Iq8-QN-pV0">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UB4-up-SHf" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="UB4-up-SHf" customClass="QKNavigationController" customModule="swift3_example" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="2yE-Jw-BTn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oay-21-ws9">

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		742AF4481E8106D700BAD5AA /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF4471E8106D700BAD5AA /* HomeVC.swift */; };
 		742AF44A1E8106DE00BAD5AA /* SettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF4491E8106DE00BAD5AA /* SettingVC.swift */; };
+		742AF44E1E81089B00BAD5AA /* QKNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF44D1E81089B00BAD5AA /* QKNavigationController.swift */; };
+		742AF4511E81090C00BAD5AA /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AF4501E81090C00BAD5AA /* ColorExtensions.swift */; };
 		74AA81CD1E7BB88400E9AE51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74AA81CC1E7BB88400E9AE51 /* Assets.xcassets */; };
 		74AA81DB1E7BB88400E9AE51 /* swift3_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA81DA1E7BB88400E9AE51 /* swift3_exampleTests.swift */; };
 		74AA81E61E7BB88400E9AE51 /* swift3_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AA81E51E7BB88400E9AE51 /* swift3_exampleUITests.swift */; };
@@ -48,6 +50,8 @@
 /* Begin PBXFileReference section */
 		742AF4471E8106D700BAD5AA /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		742AF4491E8106DE00BAD5AA /* SettingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingVC.swift; sourceTree = "<group>"; };
+		742AF44D1E81089B00BAD5AA /* QKNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKNavigationController.swift; sourceTree = "<group>"; };
+		742AF4501E81090C00BAD5AA /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		74AA81C21E7BB88400E9AE51 /* swift3-example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift3-example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74AA81CC1E7BB88400E9AE51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74AA81D61E7BB88400E9AE51 /* swift3-exampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift3-exampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,14 @@
 				742AF4491E8106DE00BAD5AA /* SettingVC.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		742AF44F1E8108EC00BAD5AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				742AF4501E81090C00BAD5AA /* ColorExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		74AA81B91E7BB88300E9AE51 = {
@@ -263,6 +275,7 @@
 			children = (
 				74AA820F1E7BBB2800E9AE51 /* QKViewController.swift */,
 				74AA82111E7BBC1600E9AE51 /* QKTabbarController.swift */,
+				742AF44D1E81089B00BAD5AA /* QKNavigationController.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -278,6 +291,7 @@
 		74EB38761E80DE41005BF2A7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				742AF44F1E8108EC00BAD5AA /* Extensions */,
 				74EB38861E80E46F005BF2A7 /* Constants */,
 			);
 			path = Common;
@@ -492,6 +506,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74EB387E1E80DED7005BF2A7 /* AccountManager.swift in Sources */,
+				742AF4511E81090C00BAD5AA /* ColorExtensions.swift in Sources */,
 				742AF4481E8106D700BAD5AA /* HomeVC.swift in Sources */,
 				74EB38811E80DF92005BF2A7 /* AccountModel.swift in Sources */,
 				74EB38841E80DFA9005BF2A7 /* BaseModel.swift in Sources */,
@@ -499,6 +514,7 @@
 				74EB38881E80E47B005BF2A7 /* AppConstants.swift in Sources */,
 				74AA820C1E7BBB1000E9AE51 /* AppDelegate.swift in Sources */,
 				742AF44A1E8106DE00BAD5AA /* SettingVC.swift in Sources */,
+				742AF44E1E81089B00BAD5AA /* QKNavigationController.swift in Sources */,
 				74AA82101E7BBB2800E9AE51 /* QKViewController.swift in Sources */,
 				74AA820D1E7BBB1000E9AE51 /* LaunchVC.swift in Sources */,
 				74AA82121E7BBC1600E9AE51 /* QKTabbarController.swift in Sources */,

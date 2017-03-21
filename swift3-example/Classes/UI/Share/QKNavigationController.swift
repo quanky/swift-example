@@ -1,7 +1,6 @@
 
-
 //
-//  HomeVC.swift
+//  QKNavigationController.swift
 //  swift3-example
 //
 //  Created by Quang Co on 3/21/17.
@@ -10,7 +9,7 @@
 
 import UIKit
 
-class HomeVC: QKViewController {
+class QKNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
