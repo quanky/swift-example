@@ -61,6 +61,7 @@ extension AppDelegate {
         unsubscribeToPushNotification()
         AccountManager.userManager.logOutCurrentUser()
         QKCache.cacheWithID(cacheID: AppConstants.Cache.APIToken)?.clearAllData()
+        showLoginView()
     }
     
     func showLoginView() {
