@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +21,48 @@
                     <view key="view" contentMode="scaleToFill" id="aXR-3v-gXW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="nnX-5v-4ob">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecting to server" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULh-sf-U8e">
+                                <rect key="frame" x="46" y="323" width="282" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.93040575069999998" green="1" blue="0.96973180910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yin-r9-yiY">
+                                <rect key="frame" x="141.5" y="364" width="91" height="30"/>
+                                <state key="normal" title="RECONNECT">
+                                    <color key="titleColor" red="0.93040575069999998" green="1" blue="0.96973180910000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnReloadClicked" destination="sch-gd-1FP" eventType="touchUpInside" id="Qfj-3L-MzI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ULh-sf-U8e" firstAttribute="centerX" secondItem="aXR-3v-gXW" secondAttribute="centerX" id="3Hp-Qb-BgJ"/>
+                            <constraint firstItem="nnX-5v-4ob" firstAttribute="top" secondItem="KLo-1h-OhQ" secondAttribute="bottom" constant="-20" id="Lzt-cu-gai"/>
+                            <constraint firstItem="yin-r9-yiY" firstAttribute="top" secondItem="ULh-sf-U8e" secondAttribute="bottom" constant="20" id="NPi-u7-nQi"/>
+                            <constraint firstItem="ULh-sf-U8e" firstAttribute="leading" secondItem="aXR-3v-gXW" secondAttribute="leadingMargin" constant="30" id="SLE-kr-VwH"/>
+                            <constraint firstItem="ULh-sf-U8e" firstAttribute="centerY" secondItem="aXR-3v-gXW" secondAttribute="centerY" id="Uaw-nV-faQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nnX-5v-4ob" secondAttribute="trailing" constant="-16" id="WoR-Op-A5e"/>
+                            <constraint firstItem="yin-r9-yiY" firstAttribute="centerX" secondItem="ULh-sf-U8e" secondAttribute="centerX" id="css-TG-0Uq"/>
+                            <constraint firstItem="7aA-Se-ymB" firstAttribute="top" secondItem="nnX-5v-4ob" secondAttribute="bottom" id="keh-R8-hce"/>
+                            <constraint firstItem="nnX-5v-4ob" firstAttribute="leading" secondItem="aXR-3v-gXW" secondAttribute="leadingMargin" constant="-16" id="oyz-ob-0yW"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="btnReload" destination="yin-r9-yiY" id="346-8z-uKM"/>
+                        <outlet property="lblMessage" destination="ULh-sf-U8e" id="3z1-SZ-iPg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otJ-L9-eKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="24"/>
+            <point key="canvasLocation" x="32.799999999999997" y="23.838080959520241"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="KLF-H6-BSb">
@@ -74,4 +111,7 @@
             <point key="canvasLocation" x="1410" y="-132"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="app_background.png" width="750" height="1334"/>
+    </resources>
 </document>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="HomeTabsCell" customModule="swift3_example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tfb-fk-rPM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kir-UF-XGi" customClass="HomeTabView" customModule="swift3_example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="160" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STATS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6b1-nx-oQM">
+                                        <rect key="frame" x="55" y="15" width="50.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18W-TZ-rjB">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                                        <connections>
+                                            <action selector="btnStatsClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2FH-FF-2cu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6b1-nx-oQM" firstAttribute="centerX" secondItem="kir-UF-XGi" secondAttribute="centerX" id="Opf-AE-dHV"/>
+                                    <constraint firstItem="18W-TZ-rjB" firstAttribute="top" secondItem="kir-UF-XGi" secondAttribute="top" id="a42-dK-RJI"/>
+                                    <constraint firstItem="6b1-nx-oQM" firstAttribute="centerY" secondItem="kir-UF-XGi" secondAttribute="centerY" id="gyf-fW-xlv"/>
+                                    <constraint firstAttribute="height" constant="50" id="hDM-HK-HeZ"/>
+                                    <constraint firstItem="18W-TZ-rjB" firstAttribute="centerX" secondItem="kir-UF-XGi" secondAttribute="centerX" id="hia-WD-Lbg"/>
+                                    <constraint firstItem="18W-TZ-rjB" firstAttribute="centerY" secondItem="kir-UF-XGi" secondAttribute="centerY" id="hvE-fJ-Bgd"/>
+                                    <constraint firstAttribute="trailing" secondItem="18W-TZ-rjB" secondAttribute="trailing" id="ua1-5u-mYh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="lblTitle" destination="6b1-nx-oQM" id="DcN-l3-fP3"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dvx-GR-JYM" customClass="HomeTabView" customModule="swift3_example" customModuleProvider="target">
+                                <rect key="frame" x="160" y="0.0" width="160" height="49.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MESSAGE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugM-pI-obG">
+                                        <rect key="frame" x="41.5" y="15" width="77.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvj-3I-0Mo">
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="49.5"/>
+                                        <connections>
+                                            <action selector="btnMessageClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="plc-v6-tfb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ugM-pI-obG" firstAttribute="centerY" secondItem="dvx-GR-JYM" secondAttribute="centerY" id="4gU-iC-Yzm"/>
+                                    <constraint firstItem="gvj-3I-0Mo" firstAttribute="centerX" secondItem="dvx-GR-JYM" secondAttribute="centerX" id="E7X-be-u6y"/>
+                                    <constraint firstItem="gvj-3I-0Mo" firstAttribute="top" secondItem="dvx-GR-JYM" secondAttribute="top" id="QgQ-da-IKR"/>
+                                    <constraint firstItem="gvj-3I-0Mo" firstAttribute="centerY" secondItem="dvx-GR-JYM" secondAttribute="centerY" id="Wdo-FQ-cRy"/>
+                                    <constraint firstAttribute="trailing" secondItem="gvj-3I-0Mo" secondAttribute="trailing" id="a7d-8f-9B1"/>
+                                    <constraint firstItem="ugM-pI-obG" firstAttribute="centerX" secondItem="dvx-GR-JYM" secondAttribute="centerX" id="dMf-As-4qh"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="lblTitle" destination="ugM-pI-obG" id="0hg-Fq-KMA"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="dvx-GR-JYM" secondAttribute="bottom" id="0P1-aA-fcg"/>
+                            <constraint firstItem="dvx-GR-JYM" firstAttribute="top" secondItem="Tfb-fk-rPM" secondAttribute="top" id="2Yd-uP-pq1"/>
+                            <constraint firstItem="dvx-GR-JYM" firstAttribute="width" secondItem="kir-UF-XGi" secondAttribute="width" id="ShG-O5-bRl"/>
+                            <constraint firstAttribute="bottom" secondItem="kir-UF-XGi" secondAttribute="bottom" id="ViT-Uz-l3o"/>
+                            <constraint firstAttribute="trailing" secondItem="dvx-GR-JYM" secondAttribute="trailing" id="pIu-bV-oir"/>
+                            <constraint firstItem="kir-UF-XGi" firstAttribute="top" secondItem="Tfb-fk-rPM" secondAttribute="top" id="s7b-TU-w29"/>
+                            <constraint firstItem="kir-UF-XGi" firstAttribute="leading" secondItem="Tfb-fk-rPM" secondAttribute="leading" id="sQR-VW-OSQ"/>
+                            <constraint firstItem="kir-UF-XGi" firstAttribute="width" secondItem="Tfb-fk-rPM" secondAttribute="width" multiplier="0.5" id="tSY-29-vPy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Tfb-fk-rPM" secondAttribute="bottom" id="5xa-fq-Jsh"/>
+                    <constraint firstItem="Tfb-fk-rPM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Lrv-mQ-1ya"/>
+                    <constraint firstItem="Tfb-fk-rPM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oo9-b5-clc"/>
+                    <constraint firstAttribute="trailing" secondItem="Tfb-fk-rPM" secondAttribute="trailing" id="zOY-p0-aPX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="vwMessages" destination="dvx-GR-JYM" id="qjF-24-xH6"/>
+                <outlet property="vwStats" destination="kir-UF-XGi" id="OHD-Yu-bwp"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="164"/>
+        </tableViewCell>
+    </objects>
+</document>

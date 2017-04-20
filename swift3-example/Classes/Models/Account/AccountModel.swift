@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import SwiftCore
 
 class AccountModel: QKUser {
-
+    
 }

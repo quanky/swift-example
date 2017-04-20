@@ -19,7 +19,11 @@ extension UIColor {
     }
     
     static func globalColor() -> UIColor {
-        return UIColorFromRGB(0x181d33)
+        return UIColorFromRGB(0x262e40)
+    }
+    
+    static func globalYellowColor() -> UIColor {
+        return UIColorFromRGB(0xffcb2b)
     }
     
     static func tabbarSelectedColor() -> UIColor {

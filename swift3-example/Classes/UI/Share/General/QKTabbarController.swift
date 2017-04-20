@@ -12,9 +12,10 @@ class QKTabbarController: UITabBarController, UITabBarControllerDelegate {
     
     var listItems  = [
         QKTabbarModel(title: "Home", icon: "home", index: 0),
-        QKTabbarModel(title: "Setting", icon: "setting", index: 3),
+        QKTabbarModel(title: "Setting", icon: "setting", index: 4),
+        QKTabbarModel(title: "Battle", icon: "", index: 2),
         QKTabbarModel(title: "Graph", icon: "graph", index: 1),
-        QKTabbarModel(title: "Showcase", icon: "showcase", index: 2),
+        QKTabbarModel(title: "Showcase", icon: "showcase", index: 3),
     ]
     
     //Should store this tabbar for quick access
@@ -63,17 +64,17 @@ class QKTabbarController: UITabBarController, UITabBarControllerDelegate {
         //User this function if you want to prevent user to view any child controller of tabbar base on their index
         //One example is anonymous login use shouldnt be able to get in setting view
         if !AccountManager.userManager.isLoggedIn {
-            if index == 3 {
+            if index == 4 {
                 //Show pop up that user cant enter this unless they login
                 return false
             }
         }
         
         //You can also use this to perform some action instead of entering child controller
-        if index == 2 {
-            self.openWebview()
-            return false
-        }
+//        if index == 2 {
+//            self.openWebview()
+//            return false
+//        }
         return true
     }
     

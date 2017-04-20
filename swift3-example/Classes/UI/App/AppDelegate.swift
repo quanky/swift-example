@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
