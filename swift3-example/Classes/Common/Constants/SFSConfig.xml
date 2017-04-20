@@ -1,0 +1,8 @@
+<SmartFoxConfig>
+	<ip>162.13.141.67</ip>
+	<port>843</port>
+	<zone>KQ1</zone>
+	<useBlueBox>true</useBlueBox>
+	<httpPort>8080</httpPort>
+	<httpPollSpeed>750</httpPollSpeed>
+</SmartFoxConfig>

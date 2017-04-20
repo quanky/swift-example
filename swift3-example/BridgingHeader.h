@@ -11,3 +11,5 @@
 
 
 #endif /* BridgingHeader_h */
+
+#import <SFS2XAPIIOS/SmartFox2XClient.h>

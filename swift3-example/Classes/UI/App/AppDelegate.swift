@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -59,6 +58,9 @@ extension AppDelegate {
     
     func logOut() {
         unsubscribeToPushNotification()
+        AccountManager.userManager.logOutCurrentUser()
+        QKCache.cacheWithID(cacheID: AppConstants.Cache.APIToken)?.clearAllData()
+        showLoginView()
     }
     
     func showLoginView() {
